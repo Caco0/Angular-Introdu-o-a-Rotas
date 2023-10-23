@@ -15,7 +15,8 @@ export class CardComponent implements OnInit {
     this.activeRout.queryParams.subscribe((res) => console.log(res));
   }
   ngOnInit(): void {
-    this.navegador.navigate(['/']);
-    setInterval(() => {}, 5000);
+    //seta um intevalo para retornar para home "/"
+    // this.navegador.navigate(['/']);
+    // setInterval(() => {}, 5000);
   }
 }
