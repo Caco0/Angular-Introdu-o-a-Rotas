@@ -11,6 +11,8 @@ export class CardComponent implements OnInit {
   constructor(private activeRout: ActivatedRoute, private navegador: Router) {
     this.activeRout.params.subscribe((res) => console.log(res));
 
+    this.activeRout.firstChild?.params.subscribe((res) => console.log(res));
+
     // http://localhost:4200/portifolio/1?{name=rafaeltoken=123}
     this.activeRout.queryParams.subscribe((res) => console.log(res));
   }
